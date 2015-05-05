@@ -1,0 +1,79 @@
+<H1>Case Management System</H1>
+
+<b>Introduction</b>
+
+This is a system used to ensure that judicial opinions are available to the public domain.
+
+Information
+Case database
+Court calendar
+
+<h3>Why Case Management?</h3>
+
+Public legal information is common property and should be accessible to all;
+
+
+<h3>How it works</h3>
+
+This is application written in PHP to demonstrate how to read and respond to USSD requests. Here is the expected workflow of the app:
+
+Begin at STEP 1.
+ 
+
+<b>STEP 1:</b>
+
+Welcome to Case Law Service.
+
+1. Case Search
+2. Court Calender
+3. Exit
+
+If the user selects option 1, goto STEP 2
+If the user selects option 2, goto STEP 4
+If the user selects option 3, goto STEP 6
+If the selection is none of the above, goto STEP 9
+ 
+<b>STEP 2:</b>
+Display the following menu and wait for a response:
+
+1. Enter Case Number
+
+If the user Enters a Case number, goto STEP 3
+
+If the selection is none of the above, goto STEP 9
+ 
+<b>STEP 3:</b>
+Display the following message and release the session:
+
+Case Number is 21 of 2013 parties Jones vs Republic judge Abaleka action review date 20/03/2013
+
+ 
+<b>STEP 4:</b>
+Display the following menu and wait for a response:
+
+Enter the Cause List number
+If the user Enters a number, goto STEP 5
+If the selection is none of the above, goto STEP 9
+ 
+<b>STEP 5:</b>
+Display the following message and release the session:
+Thank You. Case Number is 21 of 2013 parties Jones vs Republic judge Abaleka action review date 20/03/2013
+
+ 
+<b>STEP 6:</b>
+Display the following message and release the session:
+
+Thank You
+
+
+ 
+STEP 9:
+Display the following message and release the session:
+Invalid selection.
+ 
+
+Try out the following case numbers to see how it works…So far my database only has this!!!
+21 of 2013
+22 of 2014
+23 of 2014
+
