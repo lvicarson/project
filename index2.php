@@ -60,7 +60,7 @@ function getCaseNumberLevelone($choice){
     }
     return $response;
 }
-
+//check the record in the db and display results
 function getCaseNumberlevelTwo($casenumber)
 {
     //Db Connection
